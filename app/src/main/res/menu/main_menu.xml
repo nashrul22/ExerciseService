@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sufle"
+        android:orderInCategory="100"
+        android:title="@drawable/icons8-stop-26"
+        android:icon="@drawable/shufle"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/stop"
+        android:icon="@drawable/stop"
+        android:orderInCategory="100"
+        android:title="TODO"
+        app:showAsAction="always" />
+</menu>
