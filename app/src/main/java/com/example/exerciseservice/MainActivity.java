@@ -26,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
-
+        ListView list = (ListView) findViewById(R.id.lvitem);
+        String [] musik = {"a","b"};
+        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, musik);
+list.setAdapter(myAdapter);
 
         audio = MediaPlayer.create(this, R.raw.sound);
         audio.setLooping(true);
