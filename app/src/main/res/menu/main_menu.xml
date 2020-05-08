@@ -5,14 +5,14 @@
     <item
         android:id="@+id/sufle"
         android:orderInCategory="100"
-        android:title="@drawable/icons8-stop-26"
-        android:icon="@drawable/shufle"
-        app:showAsAction="always"/>
+        android:icon="@drawable/shuffle"
+        app:showAsAction="always"
+        android:title="shuffle" />
 
     <item
         android:id="@+id/stop"
-        android:icon="@drawable/stop"
+        android:icon="@drawable/stopasli"
         android:orderInCategory="100"
-        android:title="TODO"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:title="stop" />
 </menu>
