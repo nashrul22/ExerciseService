@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ListView list = (ListView) findViewById(R.id.lvitem);
-        String [] musik = {"a","b"};
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, musik);
-list.setAdapter(myAdapter);
-
-        audio = MediaPlayer.create(this, R.raw.sound);
-        audio.setLooping(true);
-        audio.setVolume(1, 1);
-        audio.start();
+//        ListView list = (ListView) findViewById(R.id.lvitem);
+//        String [] musik = {"a","b"};
+//        ArrayAdapter<String> myAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, musik);
+//list.setAdapter(myAdapter);
+//
+//        audio = MediaPlayer.create(this, R.raw.sound);
+//        audio.setLooping(true);
+//        audio.setVolume(1, 1);
+//        audio.start();
 
     }
     public void runtimePermission(){
@@ -75,23 +75,23 @@ list.setAdapter(myAdapter);
 
 
 
-public void onToggleClicked(View view){
-        boolean on = ((ToggleButton) view).isChecked();
-        if (on) {
-            audio.setVolume(0,0);
-        }
-        else {
-            audio.setVolume(1,1);
-        }
-}
-
-    private void isChecked() {
-    }
-
-    public void onBackPressed(){
-        audio.stop();
-        MainActivity.this.finish();
-}
+//public void onToggleClicked(View view){
+//        boolean on = ((ToggleButton) view).isChecked();
+//        if (on) {
+//            audio.setVolume(0,0);
+//        }
+//        else {
+//            audio.setVolume(1,1);
+//        }
+//}
+//
+//    private void isChecked() {
+//    }
+//
+//    public void onBackPressed(){
+//        audio.stop();
+//        MainActivity.this.finish();
+//}
 
 
 }
